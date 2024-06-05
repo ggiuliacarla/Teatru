@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.RezervareController">
+    <children>
+        <BorderPane layoutX="16.0" layoutY="8.0" prefHeight="383.0" prefWidth="567.0">
+            <top>
+                <Label prefHeight="46.0" prefWidth="125.0" text="       Scena" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Broadway" size="18.0" />
+                    </font>
+                </Label>
+            </top>
+            <center>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="337.0" prefWidth="169.0">
+                            <children>
+                                <HBox prefHeight="156.0" prefWidth="167.0" />
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label prefHeight="18.0" prefWidth="82.0" text="Nume:" />
+                                        <TextField fx:id="numeTextField" />
+                                        <Label prefHeight="18.0" prefWidth="69.0" text="Prenume:" />
+                                        <TextField fx:id="prenumeTextField" />
+                                        <Label prefHeight="18.0" prefWidth="80.0" text="Telefon:" />
+                                        <TextField fx:id="telefonTextField" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="337.0" prefWidth="250.0">
+                            <children>
+                                <HBox prefHeight="26.0" prefWidth="232.0">
+                                    <children>
+                                        <Button fx:id="button1" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="1" />
+                                        <Button fx:id="button2" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="2" />
+                                        <Button fx:id="button3" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="3" />
+                                        <Button fx:id="button4" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="4" />
+                                        <Button fx:id="button5" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="5" />
+                                        <Button fx:id="button6" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="6" />
+                                        <Button fx:id="button7" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="7" />
+                                        <Button fx:id="button8" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="8" />
+                                        <Button fx:id="button9" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="9" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="26.0" prefWidth="243.0">
+                                    <children>
+                                        <Button fx:id="button10" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="10" />
+                                        <Button fx:id="button11" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="11" />
+                                        <Button fx:id="button12" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="12" />
+                                        <Button fx:id="button13" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="13" />
+                                        <Button fx:id="button14" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="14" />
+                                        <Button fx:id="button15" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="15" />
+                                        <Button fx:id="button16" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="16" />
+                                        <Button fx:id="button17" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="17" />
+                                        <Button fx:id="button18" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="35.0" text="18" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="30.0" prefWidth="232.0">
+                                    <children>
+                                        <Button fx:id="button19" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="19" />
+                                        <Button fx:id="button20" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="20" />
+                                        <Button fx:id="button21" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="21" />
+                                        <Button fx:id="button22" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="22" />
+                                        <Button fx:id="button23" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="23" />
+                                        <Button fx:id="button24" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="24" />
+                                        <Button fx:id="button25" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="25" />
+                                        <Button fx:id="button26" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="26" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="26.0" prefWidth="232.0">
+                                    <children>
+                                        <Button fx:id="button27" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="14.0" prefWidth="30.0" text="27" />
+                                        <Button fx:id="button28" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="28" />
+                                        <Button fx:id="button29" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="29" />
+                                        <Button fx:id="button30" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="30" />
+                                        <Button fx:id="button31" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="31" />
+                                        <Button fx:id="button32" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="32" />
+                                        <Button fx:id="button33" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="33" />
+                                        <Button fx:id="button34" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="26.0" prefWidth="30.0" text="34" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="253.0" />
+                                <VBox prefHeight="130.0" prefWidth="232.0">
+                                    <children>
+                                        <Button onAction="#handleReservation" fx:id="rezervaButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="263.0" text="Rezerva" />
+                                        <Button fx:id="actualizareRezervareButton" onAction="#handleUpdateReservation" mnemonicParsing="false" prefHeight="26.0" prefWidth="248.0" text="Actualizare Rezervare" />
+                                        <Button fx:id="stergeRezervareButton" onAction="#handleDeleteReservation" mnemonicParsing="false" prefHeight="26.0" prefWidth="244.0" text="Sterge Rezervare" />
+                              <Button onAction="#handleResetSelection" mnemonicParsing="false" prefHeight="26.0" prefWidth="260.0" text="Reset" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="337.0" prefWidth="170.0">
+                            <children>
+                                <HBox prefHeight="160.0" prefWidth="169.0" />
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label prefHeight="36.0" prefWidth="169.0" text="               Detalii Loc" />
+                                        <TextArea fx:id="detaliiLocTextArea" prefHeight="137.0" prefWidth="169.0" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

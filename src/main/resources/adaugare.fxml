@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controller.AdauagareController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Labelul din stânga sus a ferestrei -->
+    <Label text="Adaugare Spectacol Nou" layoutX="20" layoutY="20" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+
+    <!-- Label și TextField pentru Nume Spectacol -->
+    <Label text="Nume Spectacol" layoutX="20" layoutY="70" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+    <TextField fx:id="numeSpectacolField" layoutX="150" layoutY="70" prefWidth="200"/>
+
+    <!-- Label și TextField pentru Gen -->
+    <Label text="Gen" layoutX="20" layoutY="110" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+    <TextField fx:id="genField" layoutX="150" layoutY="110" prefWidth="200"/>
+
+    <!-- Label și DatePicker pentru Data -->
+    <Label text="Data" layoutX="20" layoutY="150" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+    <DatePicker  fx:id="dataField" layoutX="150" layoutY="150"/>
+
+    <!-- Label și TextField pentru Ora -->
+    <Label text="Ora" layoutX="20" layoutY="190" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+    <TextField fx:id="oraField" layoutX="150" layoutY="190" prefWidth="200" promptText="HH:mm"/>
+
+    <!-- Label și TextField pentru Durata -->
+    <Label text="Durata" layoutX="20" layoutY="230" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+    <TextField  fx:id="durataField" layoutX="150" layoutY="230" prefWidth="200"/>
+
+    <!-- Label și TextField pentru Pret -->
+    <Label text="Pret" layoutX="20" layoutY="270" style="-fx-font-size: 14; -fx-font-weight: bold;" />
+    <TextField  fx:id="pretField" layoutX="150" layoutY="270" prefWidth="200"/>
+
+    <!-- Butonul de Adauga -->
+    <Button onAction="#handleAdd" text="Adauga" layoutX="400" layoutY="70" prefWidth="100" />
+
+    <!-- Butonul de Logout -->
+    <Button fx:id="logout" onAction="#handleLogout" text="Logout" layoutX="400" layoutY="110" prefWidth="100" />
+
+</AnchorPane>

@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = ''
+version = '1.0-SNAPSHOT'
+
+javafx {
+    modules = [ 'javafx.controls' , 'javafx.fxml']
+}
+
+repositories {
+    mavenCentral()
+}
+
+application{
+    mainClass='org.example.Main'
+}
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.14.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.14.0'
+    //2.23.1 2.14.0
+    implementation 'org.mindrot:jbcrypt:0.4'
+
+
+    runtimeOnly group: 'org.xerial', name:'sqlite-jdbc', version:'3.36.0.3'
+    //3.34.0
+
+    // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+
+    // Hibernate Validator
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
+    implementation 'org.glassfish:jakarta.el:4.0.2'
+
+    // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-community-dialects
+    implementation 'org.hibernate.orm:hibernate-community-dialects:6.4.4.Final'
+}
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes ('Main-Class': 'Main')
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
